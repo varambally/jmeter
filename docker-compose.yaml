@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+ master:
+  build: ./jmeter-master
+  container_name: master
+  tty: true
+ slave:
+  build: ./jmeter-slave
+  tty: true
